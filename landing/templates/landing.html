@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<div class="col-md-8 offset-md-2" style="color: white;">
+    <h1>What I have enjoyed this year</h1>
+    <!--<small>
+        details | <a href=""> details </a>
+    </small>-->
+    <p>This year I have enjoyed learning new computer science skills. Examples of these include datastructures, algorithms, machine learning and object-oriented design . Furthermore, learning about the mathematics that underpin these topics has given me greater appreciation for the logical deduction required to develop such fields.</p>
+</div>
+
+<div class="col-md-8 offset-md-2" style="color: white;">
+    <h1>What I'm looking forward to learning next year</h1>
+    <p>Next year I have enjoyed learning new computer science skills. Examples of these include functional programming (by using Haskell), security and networks and artificial intelligence. Furthermore, learning about the software engineering lifecycle and being able to apply it to our own project in the following term taught me many skills that will be needed throughout my career.</p>
+</div>
+
+<div class="col-md-8 offset-md-2" style="color: white;">
+    <h1>How this site is structured and how Django works</h1>
+    <h4>Structure</h4>
+    <p>The urls.py file forwards the appropriate view to the views.py file based on a HTTP request. The models.py file reads and writes data with the views.py file. The templates provide the HTML to the views.py file. The views.py file then gives a HTTP response, which is the desired website with the desired format/view.
+    </p>
+    <h4>Django</h4>
+    <p>Django does all of the tedious tasks when setting up a web server and website, and uses a friendly programming language: Python. It does this by having a series of components that work together. One of these is the request/response system, which allows Django to accepts requests for URLs and return the HTML needed to display the page. Django passes on each URL to a view so that it can be processed and returned. A view is some Python code that is executed when a URL is accessed, such as returning a line of text, analysing an input etc. Then a response is sent back to the user. This response is usually a HTML web page that are created using templates. With all of the components, creating websites is made easy and structured, which is why famous sites like Instagram use the Django framework.</p>
+</div>
+{% endblock %}
